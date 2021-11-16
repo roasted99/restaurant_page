@@ -5,7 +5,14 @@ const homePage = () => {
     header.classList.add('header');
     header.textContent = 'Breakfast Club';
 
+    const logoPic = document.createElement('img');
+    logoPic.classList.add('logo-pic')
+    logoPic.classList.add('pics');
+    logoPic.src = '../Imgs/logo.png';
+
+
     const description = document.createElement('p');
+    description.classList.add('description')
     description.textContent = 'Breakfast Club is an all day breakfast serving restaurant. Breakfast Club\'s pancakes are the best in town.It is located in the city center where you could visit our local museum.'
 
     const opening = document.createElement('div')
@@ -23,11 +30,12 @@ const homePage = () => {
     const location = document.createElement('h2');
     const address = document.createElement('p');
     location.textContent = 'Location';
-    address.textContent = '124 Breakfast Lane, Japan';
+    address.textContent = '124 Breakfast Lane, Nagoya, Japan';
     add.appendChild(location);
     add.appendChild(address);
 
     div.appendChild(header);
+    div.appendChild(logoPic);
     div.appendChild(description);
     div.appendChild(opening);
     div.appendChild(add);
